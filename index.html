@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autocomplete</title>
+    <script src="autocomplete.js" defer></script>
+    <link href="jquery.auto-complete.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body>
+<input type="text" name="" id="j">
+
+<script type="text/template" id="res_markup" data-src="dump.json">
+
+    <div class="row autocomplete-suggestion" data-id="{id}" data-val="{ref}">
+        <div class="col-sm-1">
+            {ref}
+        </div>
+        <div class="col-sm-8">
+            {description}
+        </div>
+        <div class="">
+            {price}
+        </div>
+    </div>
+</script>
+<input type="text" name="" id="jq" value="15">
+<input type="text" name="" id="jq1" value="bmlac">
+
+</body>
+</html>

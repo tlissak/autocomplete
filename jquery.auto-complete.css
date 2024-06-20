@@ -1,0 +1,44 @@
+
+.row{ display: flex}
+
+.autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; background: #fff;
+    /* core styles should not be changed */
+    position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.autocomplete-suggestion b { font-weight: normal; color: #1f8dd6; }
+.autocomplete-suggestion.selected { background: #f0f0f0; }
+
+/* DEBUG
+.dropdown-menu-responsive {display: block !important; }
+/**/
+.dropdown-menu-responsive{
+    max-width: 100%; background: #fff ; z-index: 9999; width: 100%; padding: 5px 15px;
+    /*right:15px;*/
+}
+.dropdown-menu-responsive label{font-size: 1.2rem;}
+/*
+@media (min-width: 576px) {.dropdown-menu-responsive  {max-width: 540px;}}
+@media (min-width: 768px) {.dropdown-menu-responsive {max-width: 720px;}}
+@media (min-width: 992px) {.dropdown-menu-responsive {max-width: 960px;}}
+@media (min-width: 1200px) {.dropdown-menu-responsive {max-width: 1140px;}}
+*/
+.dropdown-menu-responsive .row {margin:0;border-bottom: 1px solid #eee;/*-moz-user-select: none; */padding: 0 6px;}
+.dropdown-menu-responsive .row > div{ overflow: hidden;}
+@media screen and (max-width: 760px) {
+    .dropdown-menu-responsive label {
+        display: inline-block;
+        font-weight: bold;
+        min-width: 30%;
+        text-align: left !important;
+
+    }
+    .dropdown-menu-responsive label + div {
+        display: inline-block;
+    }
+}
+
+
+
+
